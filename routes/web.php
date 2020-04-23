@@ -11,13 +11,16 @@
 |
 */
 Route::get('/', function () {
-    $data = [
-        'name' => 'Mass',
-        'email' => '2@brtkm@gmail.com',
-        'password' => bcrypt('12312'),
-    ];
+    // $data = [
+    //     'name' => 'Mass',
+    //     'email' => '2@brtkm@gmail.com',
+    //     'password' => bcrypt('12312'),
+    // ];
 
+    // $user = \App\User::find(33);
+    // $user->update($data);
+    //$user = \App\User::whereIn('id',[31,32]);
     $user = \App\User::find(33);
-    $user->update($data);
+    $user->delete();
     return view('welcome');
 });
