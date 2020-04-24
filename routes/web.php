@@ -11,16 +11,11 @@
 |
 */
 Route::get('/', function () {
-    // $data = [
-    //     'name' => 'Mass',
-    //     'email' => '2@brtkm@gmail.com',
-    //     'password' => bcrypt('12312'),
-    // ];
-
-    // $user = \App\User::find(33);
-    // $user->update($data);
-    //$user = \App\User::whereIn('id',[31,32]);
-    $user = \App\User::find(33);
-    $user->delete();
     return view('welcome');
 });
+
+// Route::get('/users','test\UserController@index');
+// Route::get('/users/{id}','test\UserController@show');
+// Route::post('users','test\UserController@save');
+Route::resource('users','test\UserController');
+Route::resource('product','test\ProductController');
