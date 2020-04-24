@@ -17,5 +17,6 @@ Route::get('/', function () {
 // Route::get('/users','test\UserController@index');
 // Route::get('/users/{id}','test\UserController@show');
 // Route::post('users','test\UserController@save');
-Route::resource('users','test\UserController');
-Route::resource('product','test\ProductController');
+Route::resource('user','UserController');
+
+Route::resource('product','ProductController');

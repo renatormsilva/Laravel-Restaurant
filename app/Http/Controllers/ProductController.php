@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\test;
-
+namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+
 
 class ProductController extends Controller
 {
@@ -14,7 +13,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**
@@ -24,7 +23,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -35,7 +34,8 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        
     }
 
     /**
@@ -46,7 +46,7 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        //
+        
     }
 
     /**
